@@ -1,0 +1,21 @@
+.pictures {
+	background-color: $grey-one;
+	@include size(200px 169px);
+	@include span-columns(3);
+	@include margin(30px null null null)
+	//@include shift(1);
+	//margin-left: 0;
+}
+#triumph{
+	@include position(relative, 0);
+	background-image: asset_url('triumph.jpg');
+	background-size: 330px 200px, cover;
+	background-repeat: no-repeat;
+	//background-position: 20%;
+}
+#corgi{
+	@include position(relative,0) ;
+	background-image: asset_url('maple.jpg');
+	//background-repeat: no-repeat;
+	background-size: cover;
+}

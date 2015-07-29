@@ -1,0 +1,95 @@
+
+.header {
+	@include span-columns(12);
+	background-color: $color-lite;
+
+	h1 {
+		@include span-columns(7);
+		@include margin(null null 15px null);
+	}
+
+	.diamonds{
+		@include size(100px 200px);
+		@include span-columns(5);
+		@include position(relative, null null null 50px);
+		//@include shift(-.5);
+		background-color: #4fc363;
+		float: left;
+		color: $white;
+
+		#diamond-one{
+			@include position(relative, 30px null null null);
+			@include size(75px 75px);
+			//padding: 0px;
+			background-color: $grey-two;
+			-webkit-transform: rotate(45deg) skew(0deg);
+			transform: rotate(45deg) skew(0deg);
+			i {
+				-webkit-transform: rotate(-45deg) skew(0deg);
+				transform: rotate(-45deg) skew(0deg);
+				font-size: 2.5em;
+				@include margin(20px null null 20px)
+
+			}
+		}
+		#diamond-two{
+			@include position(relative, 15px null null 60px);
+			@include size(75px 75px);
+			//padding: 0px;
+			background-color: $grey-two;
+			-webkit-transform: rotate(45deg) skew(0deg);
+			transform: rotate(45deg) skew(0deg);
+			i {
+				-webkit-transform: rotate(-45deg) skew(0deg);
+				transform: rotate(-45deg) skew(0deg);
+				font-size: 3em;
+				@include margin(15px null null 16px)
+			}
+		}
+		#diamond-two:hover{
+			background-color: blue;
+		}
+		#diamond-three{
+			@include position(relative, -120px null null 120px);
+			@include size(75px 75px);
+			//padding: 0px;
+			background-color: $grey-two;
+			-webkit-transform: rotate(45deg) skew(0deg);
+			transform: rotate(45deg) skew(0deg);
+			p {
+				-webkit-transform: rotate(-45deg) skew(0deg);
+				transform: rotate(-45deg) skew(0deg);
+				font-size: 1.25em;
+				@include position(relative, 20px null null 1px);
+				color:#45b6c3;
+				#gridiron{
+					color: orange;
+				}
+			}
+		}
+		#diamond-four{
+			@include position(relative, -135px null null 180px);
+			@include size(75px 75px);
+			//padding: 0px;
+			background-color: $grey-two;
+			-webkit-transform: rotate(45deg) skew(0deg);
+			transform: rotate(45deg) skew(0deg);
+			p {
+				-webkit-transform: rotate(-45deg) skew(0deg);
+				transform: rotate(-45deg) skew(0deg);
+			}
+		}
+		#diamond-five{
+			@include position(relative, -270px null null 240px);
+			@include size(75px 75px);
+			//padding: 0px;
+			background-color: $grey-two;
+			-webkit-transform: rotate(45deg) skew(0deg);
+			transform: rotate(45deg) skew(0deg);
+			p {
+				-webkit-transform: rotate(-45deg) skew(0deg);
+				transform: rotate(-45deg) skew(0deg);
+			}
+		}
+	}
+}
