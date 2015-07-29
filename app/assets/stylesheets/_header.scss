@@ -1,4 +1,6 @@
-
+a:visited{
+	color: white;
+}
 .header {
 	@include span-columns(12);
 	background-color: $color-lite;
@@ -56,6 +58,9 @@
 			background-color: $grey-two;
 			-webkit-transform: rotate(45deg) skew(0deg);
 			transform: rotate(45deg) skew(0deg);
+			a:visited{
+				color: $grey-two;
+			}
 			p {
 				-webkit-transform: rotate(-45deg) skew(0deg);
 				transform: rotate(-45deg) skew(0deg);

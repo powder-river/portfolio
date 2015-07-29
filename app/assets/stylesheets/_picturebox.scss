@@ -1,7 +1,7 @@
 .pictures {
 	background-color: $grey-one;
-	@include size(200px 169px);
-	@include span-columns(3);
+	@include size(169px 169px);
+	@include span-columns(2.5);
 	@include margin(30px null null null)
 	//@include shift(1);
 	//margin-left: 0;
@@ -16,6 +16,7 @@
 #corgi{
 	@include position(relative,0) ;
 	background-image: asset_url('maple.jpg');
-	//background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 }
