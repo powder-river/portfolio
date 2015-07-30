@@ -1,17 +1,19 @@
 #picture-container{
 	@include outer-container();
-	@include span-columns(6);
+	@include span-columns(5);
 	@include margin(null 200px null null);
-	background-color: pink;
+	// background-color: pink;
 	// @include shift(1);
 	//margin-left: 0;
 	#grapes{
-		@include shift(2);
+		// @include shift(2.5);
 		// @include margin(null 50px null null);
 		.pictures {
 			background-color: $grey-one;
-			@include size(169px 184.5px);
-			@include span-columns(4);
+			// @include size(169px 184.5px);
+			@include size(200px 200px);
+			float: left;
+			// @include span-columns(4);
 			@include margin(30px 30px null null);
 			// @include shift(1);
 			//margin-left: 0;
@@ -26,6 +28,20 @@
 		#corgi{
 			@include position(relative,0) ;
 			background-image: asset_url('maple.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+		#steamboat{
+			@include position(relative,0) ;
+			background-image: asset_url('uw.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+		#a-ruby{
+			@include position(relative,0) ;
+			background-image: asset_url('logo-ruby.jpg');
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;

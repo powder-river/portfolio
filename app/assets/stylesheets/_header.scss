@@ -7,7 +7,8 @@ a:visited{
 
 	h1 {
 		@include span-columns(7);
-		@include margin(null null 15px null);
+		@include margin(null null 5px null);
+		@include padding(30px null null 30px);
 	}
 
 	.diamonds{
@@ -15,15 +16,19 @@ a:visited{
 		@include span-columns(5);
 		@include position(relative, null null null 50px);
 		//@include shift(-.5);
-		background-color: #4fc363;
+		background-color: $color-med;
 		float: left;
 		color: $white;
 
 		#diamond-one{
 			@include position(relative, 30px null null null);
 			@include size(75px 75px);
+
 			//padding: 0px;
-			background-color: $grey-two;
+			background-color: $grey-one;
+			border-width: 1px;
+			border-color: $grey-one;
+			border-style: solid;
 			-webkit-transform: rotate(45deg) skew(0deg);
 			transform: rotate(45deg) skew(0deg);
 			i {
@@ -34,11 +39,20 @@ a:visited{
 
 			}
 		}
+		#diamond-one:hover{
+			background-color: white;
+			i{
+				color: $color-dark;
+			}
+		}
 		#diamond-two{
 			@include position(relative, 15px null null 60px);
 			@include size(75px 75px);
 			//padding: 0px;
-			background-color: $grey-two;
+			background-color: $grey-one;
+			border-width: 1px;
+			border-color: $grey-one;
+			border-style: solid;
 			-webkit-transform: rotate(45deg) skew(0deg);
 			transform: rotate(45deg) skew(0deg);
 			i {
@@ -49,25 +63,28 @@ a:visited{
 			}
 		}
 		#diamond-two:hover{
-			background-color: blue;
+			background-color: white;
 			i{
-				color: red;
+				color: $color-dark;
 			}
 		}
 		#diamond-three{
 			@include position(relative, -120px null null 120px);
 			@include size(75px 75px);
 			//padding: 0px;
-			background-color: $grey-two;
+			background-color: $grey-one;
+			border-width: 1px;
+			border-color: $grey-one;
+			border-style: solid;
 			-webkit-transform: rotate(45deg) skew(0deg);
 			transform: rotate(45deg) skew(0deg);
 			a:visited{
-				color: $grey-two;
+				color: $grey-one;
 			}
 			p {
 				-webkit-transform: rotate(-45deg) skew(0deg);
 				transform: rotate(-45deg) skew(0deg);
-				font-size: 1.25em;
+				font-size: 1.5em;
 				@include position(relative, 20px null null 1px);
 				color:#45b6c3;
 				#gridiron{
@@ -75,11 +92,20 @@ a:visited{
 				}
 			}
 		}
+		#diamond-three:hover{
+			background-color: white;
+			a{
+				color: white;
+			}
+		}
 		#diamond-four{
 			@include position(relative, -135px null null 180px);
 			@include size(75px 75px);
 			//padding: 0px;
-			background-color: $grey-two;
+			background-color: $grey-one;
+			border-width: 1px;
+			border-color: $grey-one;
+			border-style: solid;
 			-webkit-transform: rotate(45deg) skew(0deg);
 			transform: rotate(45deg) skew(0deg);
 			p {
@@ -99,23 +125,39 @@ a:visited{
 				@include margin(17px null null 16px)
 			}
 		}
+		#diamond-four:hover{
+			background-color: white;
+			i{
+				color: $color-dark;
+			}
+		}
 		#diamond-five{
 			@include position(relative, -270px null null 240px);
 			@include size(75px 75px);
 			//padding: 0px;
-			background-color: $grey-two;
+			background-color: $grey-one;
+			border-width: 1px;
+			border-color: $grey-one;
+			border-style: solid;
 			-webkit-transform: rotate(45deg) skew(0deg);
 			transform: rotate(45deg) skew(0deg);
 			p {
 				-webkit-transform: rotate(-45deg) skew(0deg);
 				transform: rotate(-45deg) skew(0deg);
-					@include position(relative, 16px null null 8px);
+					@include position(relative, 18px null null 2px);
+					font-size: 1.25em;
 			}
 			a:link{
 				color: whitesmoke;
 			}
 			a:visited{
 				color: whitesmoke;
+			}
+		}
+		#diamond-five:hover{
+			background-color: white;
+			a{
+				color: $color-dark;
 			}
 		}
 	}
