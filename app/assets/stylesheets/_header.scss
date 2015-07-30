@@ -50,6 +50,9 @@ a:visited{
 		}
 		#diamond-two:hover{
 			background-color: blue;
+			i{
+				color: red;
+			}
 		}
 		#diamond-three{
 			@include position(relative, -120px null null 120px);
@@ -83,6 +86,18 @@ a:visited{
 				-webkit-transform: rotate(-45deg) skew(0deg);
 				transform: rotate(-45deg) skew(0deg);
 			}
+			a:link{
+				color: whitesmoke;
+			}
+			a:visited{
+				color: whitesmoke;
+			}
+			i {
+				-webkit-transform: rotate(-45deg) skew(0deg);
+				transform: rotate(-45deg) skew(0deg);
+				font-size: 2.5em;
+				@include margin(17px null null 16px)
+			}
 		}
 		#diamond-five{
 			@include position(relative, -270px null null 240px);
@@ -94,6 +109,13 @@ a:visited{
 			p {
 				-webkit-transform: rotate(-45deg) skew(0deg);
 				transform: rotate(-45deg) skew(0deg);
+					@include position(relative, 16px null null 8px);
+			}
+			a:link{
+				color: whitesmoke;
+			}
+			a:visited{
+				color: whitesmoke;
 			}
 		}
 	}

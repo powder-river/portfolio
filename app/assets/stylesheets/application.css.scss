@@ -27,8 +27,9 @@
 	@include outer-container();
 	background-color: $grey-two;
 	@include size(200px auto);
-	@include span-columns(5);
-	@include margin(30px null null 30px);
+	@include span-columns(6);
+	@include margin(30px null null null);
+	@include padding(5px 20px null null);
 	h3{
 		color: $color-lite;
 		@include padding(null null null 10px);
@@ -46,6 +47,3 @@
 
 
 //picture /////////////////////////////////////////////////////////////
-
-
-

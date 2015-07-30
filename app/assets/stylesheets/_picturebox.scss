@@ -1,22 +1,34 @@
-.pictures {
-	background-color: $grey-one;
-	@include size(169px 169px);
-	@include span-columns(2.5);
-	@include margin(30px null null null)
-	//@include shift(1);
+#picture-container{
+	@include outer-container();
+	@include span-columns(6);
+	@include margin(null 200px null null);
+	background-color: pink;
+	// @include shift(1);
 	//margin-left: 0;
-}
-#triumph{
-	@include position(relative, 0);
-	background-image: asset_url('triumph.jpg');
-	background-size: 330px 200px, cover;
-	background-repeat: no-repeat;
-	//background-position: 20%;
-}
-#corgi{
-	@include position(relative,0) ;
-	background-image: asset_url('maple.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	#grapes{
+		@include shift(2);
+		// @include margin(null 50px null null);
+		.pictures {
+			background-color: $grey-one;
+			@include size(169px 184.5px);
+			@include span-columns(4);
+			@include margin(30px 30px null null);
+			// @include shift(1);
+			//margin-left: 0;
+		}
+		#triumph{
+			@include position(relative, 0);
+			background-image: asset_url('triumph.jpg');
+			background-size: 330px 200px, cover;
+			background-repeat: no-repeat;
+			//background-position: 20%;
+		}
+		#corgi{
+			@include position(relative,0) ;
+			background-image: asset_url('maple.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+	}
 }
