@@ -25,8 +25,9 @@
 
 ///about me field////////////////////////////////////////////////////
 body{
-	background-color: $grey-one;
-	font-family: 'Josefin Sans', sans-serif;
+	background-image: url('coffee.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
 }
 .about-me-container{
 	@include outer-container();
